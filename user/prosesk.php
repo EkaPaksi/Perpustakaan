@@ -10,7 +10,7 @@
 						header('location:../index.php?p=olahk');
 	                    break;
                         case "update":
-						mysql_query("UPDATE pengguna SET nama='$_POST[nama]' WHERE id='$_POST[id]'");
+						mysql_query("UPDATE pengguna SET nama='$_POST[nama]', username='$_POST[username]' WHERE id='$_POST[id]'");
 						header('location:../index.php?p=olahk');  
 						}
                     ?>

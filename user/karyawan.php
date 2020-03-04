@@ -21,7 +21,7 @@ echo "<div class='panel panel-border panel-primary'>
                                     </thead>
                                     <tbody>";
 							$i=1;
-							$tp=mysql_query("SELECT * FROM pengguna WHERE level='Karyawan' ORDER BY id");
+							$tp=mysql_query("SELECT * FROM pengguna ORDER BY id");
 							while($r=mysql_fetch_array($tp)){
 						    //$hargaa = $r['harga'];
                              echo"<tr>
@@ -61,10 +61,6 @@ echo "<div class='panel panel-border panel-primary'>
 					   <div class='form-group'>
                             <label>Username</label>
                             <div class='span9'><input class='form-control' size='16' type='text' value='$r[username]' name='username' /></div>
-                        </div>
-						<div class='form-group'>
-                            <label>Password</label>
-                            <div class='span9'><input class='form-control' size='16' type='text' value='$password' name='password' /></div>
                         </div>
 							
 					<Br>
